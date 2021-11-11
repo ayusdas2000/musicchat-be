@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://ayusdas:Tn2SI3mCKrmgCs3K@cluster0.rvtm1.mongodb.net/musicChatDatabase?retryWrites=true&w=majority",
+  "jwtSecret": "secret17032000moksha108japa"
+}
