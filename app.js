@@ -7,7 +7,6 @@ const app = express();
 app.use(
   cors({
     origin: "https://musicchat.herokuapp.com",
-    origin: "http://localhost:3000",
   })
 );
 
