@@ -4,11 +4,7 @@ const cors = require("cors");
 const path = require("path");
 
 const app = express();
-app.use(
-  cors({
-    origin: "https://musicchat-wheat.vercel.app/",
-  })
-);
+app.use(cors());
 
 //Connect Database
 connectDB();
