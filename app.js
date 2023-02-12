@@ -16,6 +16,9 @@ connectDB();
 app.use(express.json());
 
 // Define Routes
+app.get("/", (req, res) => {
+  res.json("All ok!");
+});
 app.use("/api/users", require("./routes/api/user"));
 app.use("/api/auth", require("./routes/api/auth"));
 app.use("/api/profile", require("./routes/api/profile"));
