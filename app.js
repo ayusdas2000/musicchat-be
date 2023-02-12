@@ -1,12 +1,19 @@
 const express = require("express");
 const connectDB = require("./config/db");
-const cors = require("cors");
 const path = require("path");
+const cors = requite("cors");
 
 const app = express();
+// server.js
+
+//enables cors
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    allowedHeaders: ["sessionId", "Content-Type"],
+    exposedHeaders: ["sessionId"],
+    origin: "*",
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    preflightContinue: false,
   })
 );
 
