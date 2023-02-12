@@ -7,7 +7,7 @@ const app = express();
 // server.js
 
 //enables cors
-app.use(cors({ origin: "https://musicchat-wheat.vercel.app/" }));
+app.use(cors({ origin: "https://musicchat-wheat.vercel.app" }));
 
 //Connect Database
 connectDB();
