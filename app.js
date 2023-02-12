@@ -7,7 +7,7 @@ const app = express();
 // server.js
 
 //enables cors
-app.use(cors({ origin: true }));
+app.use(cors({ origin: "*" }));
 
 //Connect Database
 connectDB();
