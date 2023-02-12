@@ -5,6 +5,7 @@ const path = require("path");
 
 const app = express();
 app.use(cors());
+app.options("*", cors());
 
 //Connect Database
 connectDB();
